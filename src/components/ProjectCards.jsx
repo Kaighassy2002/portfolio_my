@@ -37,7 +37,7 @@ function ProjectCards() {
               <Card.Body>
                 <Card.Title>Portfolio</Card.Title>
                 <Card.Text className='cards-p'>Developed a portfolio website using React, Bootstrap, and custom CSS for a responsive and visually appealing design.</Card.Text>
-                <Button variant="primary"><a style={{textDecoration:'none',color:'white'}} href="">Go somewhere</a></Button>
+                <Button variant="primary"><a style={{textDecoration:'none',color:'white'}} href="https://portfolio-my-alpha.vercel.app/">Go somewhere</a></Button>
               </Card.Body>
             </Card>
           )}
@@ -75,7 +75,7 @@ function ProjectCards() {
               <Card.Body>
                 <Card.Title>Portfolio</Card.Title>
                 <Card.Text className='cards-p'>Developed a portfolio website using React, Bootstrap, and custom CSS for a responsive and visually appealing design.</Card.Text>
-                <Button variant="primary"><a style={{textDecoration:'none',color:'white'}} href="">Go somewhere</a></Button>
+                <Button variant="primary"><a style={{textDecoration:'none',color:'white'}} href="https://portfolio-my-alpha.vercel.app/">Go somewhere</a></Button>
               </Card.Body>
             </Card>
           )}
@@ -108,7 +108,7 @@ function ProjectCards() {
               <Card.Body>
                 <Card.Title>Portfolio</Card.Title>
                 <Card.Text className='cards-p'>Developed a portfolio website using React, Bootstrap, and custom CSS for a responsive and visually appealing design.</Card.Text>
-                <Button variant="primary"><a style={{textDecoration:'none',color:'white'}} href="">Go somewhere</a></Button>
+                <Button variant="primary"><a style={{textDecoration:'none',color:'white'}} href="https://portfolio-my-alpha.vercel.app/">Go somewhere</a></Button>
               </Card.Body>
             </Card>
           </div>
