@@ -1,0 +1,142 @@
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
+
+.carousel-container {
+  width: 90%;
+  margin: auto;
+}
+
+.card-wrapper {
+  min-height: 60vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  box-sizing: border-box;
+}
+
+.custom-card {
+  width: 100%;
+  max-width: 300px;
+  height: 24rem;
+  border-radius: 10px;
+  
+  padding: 3px;
+  position: relative;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: color 0.5s ease-in-out, backdrop-filter 0.5s ease-in-out;
+  backdrop-filter: blur(3px);
+  cursor: pointer;
+  font-family: cursive;
+  /* overflow: hidden; */
+}
+
+.cards-p {
+  font-size: 12px;
+}
+
+.cards-image {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  max-height: 160px;
+  margin: 5px 0;
+  border-radius: 12px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Hover Effect */
+.custom-card:hover {
+  color: rgba(88, 199, 250, 1);
+  backdrop-filter: none;
+  transform: scale(1.05); /* Slight pop effect */
+  transition: transform 0.3s ease-in-out;
+  z-index: 10;
+}
+
+/* Gradient Glow Effect */
+.custom-card::before {
+  content: "";
+  width: 104%;
+  height: 102%;
+  border-radius: 10px;
+  background-image: linear-gradient(
+      var(--rotate),
+      #5ddcff,
+      #3c67e3 43%,
+      #4e00c2
+  );
+  position: absolute;
+  z-index: -1;
+  top: -1%;
+  left: -2%;
+  animation: spin 5s linear infinite;
+  mix-blend-mode: lighten;
+  opacity: 0.8;
+}
+
+.custom-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -2;
+  border-radius: 10px;
+  background-image: linear-gradient(
+      var(--rotate),
+      #5ddcff,
+      #3c67e3 43%,
+      #4e00c2
+  );
+  opacity: 1;
+  filter: blur(20px);
+  animation: spin 5s linear infinite;
+  mix-blend-mode: lighten;
+}
+
+/* Smooth Rotation Animation */
+@keyframes spin {
+  0% {
+      --rotate: 0deg;
+  }
+  100% {
+      --rotate: 360deg;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card-wrapper {
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+  .custom-card {
+      max-width: 45%;
+      height: 23rem;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .custom-card {
+      max-width: 300px;
+      width: 100%;
+      height: 24rem;
+      padding: 4px;
+  }
+  .cards-p{
+    font-size: 10px;
+  }
+}
