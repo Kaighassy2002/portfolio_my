@@ -5,6 +5,7 @@ import hairsalon from "../assets/images/hairsalon.jpg";
 import bookshop from "../assets/images/bookshop.jpg";
 import portfolio from "../assets/images/portfolio.jpg";
 import creative from "../assets/images/creative.jpg";
+import jewellery from "../assets/images/jewellery.jpg";
 
 function ProjectCards() {
   const cardRefs = useRef([]);
@@ -76,11 +77,11 @@ function ProjectCards() {
     },
     {
       title: "Coming Soon",
-      img: null,
-      desc: "An upcoming full stack project focused on real-time experiences and advanced UI/UX.",
+      img: jewellery,
+      desc: "An upcoming MERN full-stack website featuring secure payment gateway integration, real-time functionality, and a modern UI/UX.",
       link: null,
       comingSoon: true,
-      tech: ["Full Stack", "Realtime", "UI/UX"],
+      tech: ["MERN Stack", "Payment Gateway", "Realtime", "UI/UX"],
     },
     {
       title: "Coming Soon",
