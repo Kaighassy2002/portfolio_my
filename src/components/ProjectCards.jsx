@@ -6,6 +6,7 @@ import bookshop from "../assets/images/bookshop.jpg";
 import portfolio from "../assets/images/portfolio.jpg";
 import creative from "../assets/images/creative.jpg";
 import jewellery from "../assets/images/jewellery.jpg";
+import clinic from "../assets/images/clinic.jpg";
 
 function ProjectCards() {
   const cardRefs = useRef([]);
@@ -65,8 +66,8 @@ function ProjectCards() {
       title: "Book Shop",
       img: bookshop,
       desc: "An e-commerce bookshop interface driven by JSON data, featuring filtering, search, and responsive layouts.",
-      link: "https://book-shop-mauve.vercel.app/",
-      tech: ["React", "JSON Server", "Bootstrap"],
+      link: "https://book-shop-gi4r.vercel.app/",
+      tech: ["React", "Redux", "JSON Server", "Bootstrap"],
     },
     {
       title: "Client Portfolio",
@@ -85,11 +86,11 @@ function ProjectCards() {
     },
     {
       title: "Coming Soon",
-      img: null,
-      desc: "A new experiment exploring design systems, component libraries, and front-end performance.",
+      img: clinic,
+      desc: "A MERN stack healthcare website for doctor clinics featuring appointment slot booking, awareness sessions, and a clean, accessible user experience.",
       link: null,
       comingSoon: true,
-      tech: ["Design Systems", "Performance"],
+      tech: ["MongoDB", "Express", "React", "Node.js", "Booking System"],
     },
   ];
 
