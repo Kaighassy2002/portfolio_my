@@ -17,7 +17,7 @@ function Home() {
     const root = document.documentElement;
     if (theme === "dark") {
       root.classList.add("dark");
-    } else {
+    } else {  
       root.classList.remove("dark");
     }
     localStorage.setItem("theme", theme);
